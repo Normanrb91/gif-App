@@ -4,27 +4,21 @@ import { getGifs } from "../helper/getGifs"
 
 export const useFetchGifs = (category) => {
 
-    const [state, setState] = useState({
-        data: [],
-        loading : true
-    })
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    const getData = async() => {
+        const data = await getGifs(category)
+        setData(data)
+        setLoading(false)
+    }
 
     useEffect(() => {
-        getGifs(category)
-        .then(gifs => {
-            setState({
-                data: gifs,
-                loading: false
-            })
-        })
-        .catch(() => {
-            setState({
-                ...data,
-                loading: false
-            })
-        })
-
+        getData()
     }, [category])
     
-    return state
+    return {
+        data,
+        loading
+    }
 }

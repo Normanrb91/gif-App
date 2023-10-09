@@ -4,7 +4,7 @@
   }
   
   body {
-    padding: 60px;
+    padding: 40px;
   }
   
   input {
@@ -15,7 +15,7 @@
     font-size: 1.2rem;
     outline: none;
     padding: 10px 15px;
-    width: 100%;
+    width: 90%;
   }
   
   h2 {
@@ -24,7 +24,7 @@
   
   h3 {
     font-size: 3rem;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   
   .card-grid {
