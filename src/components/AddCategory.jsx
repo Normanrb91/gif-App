@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useForm } from '../hooks/useForm'
 
 export const AddCategory = ({ onNewCategory }) => {
@@ -12,7 +13,7 @@ export const AddCategory = ({ onNewCategory }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label="form">
       <input
         placeholder="Buscar Gifs"
         name="category"
@@ -22,4 +23,8 @@ export const AddCategory = ({ onNewCategory }) => {
       />
     </form>
   )
+}
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired
 }
