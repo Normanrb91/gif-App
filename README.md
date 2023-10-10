@@ -1,8 +1,9 @@
-# React + Vite
+# Gif App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de React que consiste en consultar la api de Giphy renderizar 10 gif sobre el tema que describimos en el campo de texto.
 
-Currently, two official plugins are available:
+Los puntos a destacer de este proyecto son:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Division del código en componentes
+- Crear custom hooks para el formulario y la peticion Fetch
+- Realizar testing con React testing library y Jest
